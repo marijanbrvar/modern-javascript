@@ -1,4 +1,4 @@
-// object literal adding methods
+// object literal this keyword
 let user = {
     name: 'Marijan',
     age: 49,
@@ -8,13 +8,16 @@ let user = {
     login: function(){
         console.log('the user logged in')
     },
-    logout: function() {
+    logout() {
         console.log('the user logged out!')
     },
-    logBlogs: function(){
+    logBlogs(){
+        // console.log(this)
+        console.log('this user has written the following blogs: ')
+        this.blogs.forEach(blog => console.log(blog))
     }
 }
 
+user.logBlogs()
 
-user.login()
-
+console.log(this)
