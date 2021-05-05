@@ -1,8 +1,11 @@
 // Else if statent
 
-const password = 'password'
+const password = 'pass'
 
-if (password.length >= 8) {
+if (password.length >= 12) {
+    console.log('this password is strong!')
+}
+else if (password.length >= 8) {
     console.log('this password is long enought!')
 }
 else {
