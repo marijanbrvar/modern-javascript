@@ -1,1 +1,2 @@
-alert('Hello JavaScript')
+console.log(1);
+console.log(2);
