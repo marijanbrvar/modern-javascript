@@ -5,5 +5,12 @@ function greet() {
 }
 
 
+
 // function expresion
+
+const speak = function(){
+    console.log('Good day!')
+};
+
+speak();
 greet();
