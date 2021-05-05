@@ -1,16 +1,10 @@
-// function declaration
-
-function greet() {
-    console.log('Hello there!')
-}
-
-
-
-// function expresion
-
-const speak = function(){
-    console.log('Good day!')
+// arguments & parameters
+const speak = function(name = 'Marijan', time = 'Night'){
+    if (name) {
+        console.log(`Good ${time}! ${name}`)
+    } else {
+        console.log(`Good day!`)
+    }
 };
 
-speak();
-greet();
+speak('Luigi', 'morning');
