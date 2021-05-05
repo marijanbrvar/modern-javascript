@@ -1,4 +1,4 @@
-// Else if statent
+// Else if statent Logical conditions
 
 const password = 'pass@word13212313'
 
