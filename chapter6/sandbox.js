@@ -10,11 +10,19 @@ button.addEventListener('click', ()=>{
     ul.prepend(li)
 })
 
-items.forEach(item => {
-    item.addEventListener('click', e => {
-        // e.target.style.textDecoration = 'line-through'
-        e.target.remove()
-    })
-})
+// items.forEach(item => {
+//     item.addEventListener('click', e => {
+//         // e.target.style.textDecoration = 'line-through'
+//         console.log('event in li')
+//         e.stopPropagation()
+//         e.target.remove()
+//     })
+// })
 
+ul.addEventListener('click', e => {
+    // console.log('event in ul')
+    if (e.target.tagName === 'LI') {
+        e.target.remove()
+    }
+})
 // ul.remove()
